@@ -120,5 +120,26 @@ body {
   tr:nth-child(even) {
     background-color: #eee;
   }
+  .footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
   
   
