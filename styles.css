@@ -1,145 +1,328 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 20px;
-    background-color: #f5f5f5;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: 200px 1fr; /* Adjust column widths as needed */
-    grid-gap: 20px;
-  }
-  
-  header {
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  nav {
-    background-color: #eee;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav li {
-    margin-bottom: 5px;
-  }
-  
-  nav a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  nav a:hover {
-    background-color: #ddd;
-  }
-  
-  .main {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-  }
-  .dashboard-section {
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    padding: 10px 20px;
+    align-items: center;
 }
 
-.cards {
-    width: 20%;
-    background-color: #fff;
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+header .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Dashboard container styles */
+.Dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar styles */
+aside {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
     padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-  .countries {
-    background-color: #f0f0f0;
-    padding: 20px;
 }
 
-.countries h2 {
-    margin-bottom: 10px;
+aside nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.countries table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.countries th, .countries td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.countries th {
-    background-color: #f2f2f2;
-}
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  th {
-    background-color: #f5f5f5;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #eee;
-  }
-  .footer {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-}
-
-.footer p {
+aside nav ul li {
+    padding: 10px;
     margin: 5px 0;
 }
 
-.footer a {
-    color: #0000EE;
+aside nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+aside nav ul li a i {
+    margin-right: 10px;
+}
+
+aside nav ul li.active {
+    background-color: #1abc9c;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card .messages {
+    background-color: #3498db;
+    color: white;
+}
+
+.card .views {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.card .shares {
+    background-color: #f39c12;
+    color: white;
+}
+
+.card .users {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* Activity feed */
+.details .feeds ul {
+    list-style: none;
+    padding: 0;
+}
+
+.details .feeds ul li {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details .feeds ul li .activity-icon {
+    margin-right: 15px;
+}
+
+.details .feeds ul li .activity-icon i {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.details .feeds ul li .activity-content {
+    flex: 1;
+}
+
+.details .feeds ul li .activity-text {
+    font-weight: bold;
+}
+
+.details .feeds ul li .activity-time {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* Stats section */
+.stats .bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats .bar .bar-text {
+    font-weight: bold;
+}
+
+.stats .bar .bar-percentage {
+    font-size: 14px;
+}
+
+/* Countries table */
+.countries table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.countries table th,
+.countries table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.countries table th {
+    background-color: #34495e;
+    color: white;
+}
+
+.countries table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+/* Recent users and comments */
+.recent-users ul,
+.recent-comments {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-users ul li,
+.recent-comments .comment {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recent-users ul li .user-avatar {
+    margin-right: 15px;
+}
+
+.recent-users ul li .user-avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.recent-comments .comment .user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.recent-comments .comment .comment-content {
+    flex: 1;
+}
+
+.recent-comments .comment .comment-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-comments .comment .comment-header .comment-author {
+    font-weight: bold;
+}
+
+.recent-comments .comment .comment-header .comment-date {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.recent-comments .comment p {
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+/* Info cards */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 15px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    margin-top: 0;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card ul li {
+    margin-bottom: 10px;
+}
+
+.green-line {
+    border: 1px solid #2ecc71;
+}
+
+.red-line {
+    border: 1px solid #e74c3c;
+}
+
+.yellow-line {
+    border: 1px solid #f39c12;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .footer-container p {
+    margin: 0;
+}
+
+footer a {
+    color: #1abc9c;
     text-decoration: none;
 }
 
-.footer a:hover {
+footer a:hover {
     text-decoration: underline;
 }
-  
-  
+
+button#more-countries {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#more-countries:hover {
+    background-color: #2980b9;
+}
