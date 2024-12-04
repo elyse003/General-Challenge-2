@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-zR2sul2oRHkLHv7zFQhASWKxIq8tH60H/i+6mrpU6Gcp40LdoB/xNF4lK1MHvJh3hT5IQ/s6hCZQI2hTGaUA==" crossorigin="anonymous" referrerpolicy="no-referrer" </li>
 </head> 
 <body>
     <header>
         <div class="logo">Logo</div>
         header>
         <div class="user-info">
-            <img src="user-avatar.png" alt="User Avatar">
+            <img src="./Images/Mike.png" alt="Mike">
             <span>Welcome, Mike</span>
         </div>
     </header>
     <div class="Dashboard container"
-     <aside>
+     <aside></aside>
         <nav>
             <ul>
              <li class="active"><a href="#"><i class="fa fa-users"></i> Overview</a></li>
@@ -47,13 +48,69 @@
             <div class="feeds">
                 <h2>Feeds</h2>
                 <ul>
-                    <li>New record. over 90 views</li>
-                    <li>Dtabase error.</li>
-                    <li>New record. over 40 users</li>
-                    <li>New comments.</li>
-                    <li>Check transactions.</li>
-                    <li>CPU overload.</li>
-                    <li>New shares.</li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">New record, over 90 views.</span>
+                            <span class="activity-time">10 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">Database error.</span>
+                             <span class="activity-time">15 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">New record, over 40 users.</span>
+                             <span class="activity-time">17 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">New comments.</span>
+                             <span class="activity-time">25 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">Checj Transactions.</span>
+                             <span class="activity-time">28 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">CPU overload.</span>
+                             <span class="activity-time">35 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">New shares.</span>
+                             <span class="activity-time">39 mins</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
                 
@@ -62,35 +119,107 @@
         </section>
         <section class="stats">
             <h2>Geberal Stats</h2>
-            <div class="bar new-visitors">New Visitors: +25%</div>
-            <div class="bar new-users">New Users: 50%</div>
-            <div class="bar bounce-rate">Bounce Rate: 75%</div>
+            <div class="bar">
+                <span class="bar-text">New Visitors</span>
+                <span class="bar-percentage">+25%</span>
+            </div>
+            <div class="bar">
+                <span class="bar-text">New Users</span>
+                <span class="bar-percentage">50%</span>
+            </div>
+            <div class="bar">
+                <span class="bar-text">Bounce Rate</span>
+                <span class="bar-percentage">75%</span>
+            </div>
         </section>
         <section class="countries">
             <h2>Countries</h2>
-            <ul>
-                <li>United States: 65%</li>
-                <li>UK: 15.7%</li>
-                <li>Russia: 5.6%</li>
-                <li>Spain: 2.1%</li>
-                <li>Indian: 1.9%</li>
-                <li>France: 1.5%</li>
-            </ul>
+            <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>United States</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>UK</td>
+                    <td>15.7%</td>
+                </tr>
+                <tr>
+                    <td>Russia</td>
+                    <td>5.6%</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>2.1%</td>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td>1.9%</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>1.5%</td>
+                </tr>
+            </table>
+    
             <button type="more-countries" id="more-countries">More Countries</button>
         </section>
         <section class="recent">
             <div class="recent-users">
                 <h2>Recent Users</h2>
                 <ul>
-                    <li>Mike</li>
-                    <li>Jill</li>
-                    <li>Jane</li>
+                    <li>
+                        <div class="user-avatar">
+                            <img src="./Images/Mike.png" alt="Mike">
+                        </div>
+                        <span>Mike</span>
+                    </li>
+                    <li>
+                        <div class="user-avatar">
+                            <img src="./Images/Jill.png" alt="Jill">
+                        </div>
+                        <span>Jill</span>
+                    </li>
+                    <li>
+                        <div class="user-avatar">
+                            <img src="./Images/Jane.png" alt="Jane">
+                        </div>
+                        <span>Jane</span>
+                    </li>
                 </ul>
             </div>
             <div class="recent-comments">
                 <h2>Recent Comments</h2>
-                <p><strong>John:</strong> Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p><strong>Bo:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="comment">
+                    <div class="user-avatar">
+                        <img src="./Images/John.png" alt="John">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="comment-author">John</span>
+                            <span class="comment-date">Sep 29, 2014, 9:12 PM</span>
+                        </div>
+                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt   
+         ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="user-avatar">   
+        
+                        <img src="./Images/Bo.png" alt="Bo">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="comment-author">Bo</span>
+                            <span class="comment-date">Sep 28, 2014, 10:15 PM</span>
+                        </div>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
         <section class="info-section">
