@@ -1,76 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+</head> 
 <body>
-    <div class="form-container">
-        <!-- Page Title -->
-        <h1 id="title">Survey Form</h1>
-
-        <!-- Description -->
-        <p id="description">Thank you for taking the time to fill out this survey. Your feedback is valuable to us!</p>
-
-        <!-- Survey Form -->
-        <form id="survey-form">
-            <!-- Name Input -->
-            <div class="form-group">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" value="UYIRINGIGIYE Marie Elyse" required>
+    <header>
+        <div class="logo">Logo</div>
+        header>
+        <div class="user-info">
+            <img src="./Images/Mike.png" alt="Mike">
+            <span>Welcome, Mike</span>
+        </div>
+    </header>
+    <div class="Dashboard container"
+     <aside></aside>
+        <nav>
+            <ul>
+             <li class="active"><a href="#"><i class="fa fa-users"></i> Overview</a></li>
+             <li><a href="#"><i class="fa fa-eye"></i> Views</a></li>
+             <li><a href="#"><i class="fa fa-exchange"></i> Traffic</a></li>
+             <li><a href="#"><i class="fa fa-globe"></i> Geo</a></li>
+             <li><a href="#"><i class="fa fa-diamond"></i> Orders</a></li>
+             <li><a href="#"><i class="fa fa-bell"></i> News</a></li>
+             <li><a href="#"><i class="fa fa-university"></i> General</a></li>
+             <li><a href="#"><i class="fa fa-history"></i> History</a></li>
+             <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+     </aside>
+     <main>
+        <section class="Overview">
+         <div class="card messages">Messages: 52</div>
+         <div class="card views">Views: 99</div>
+         <div class="card shares">:Shares: 23</div>
+         <div class="card users">Users: 50</div>
+        </section>
+        <section class="details">
+            <div class="regions">
+                <h2>Regions</h2>
+                <!--map image-->
+                <img src="./Images/region map.jpg" alt="World map"
             </div>
-
-            <!-- Email Input -->
-            <div class="form-group">
-                <label for="email" id="email-label">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" value="uyiringiyelyse003@gmail.com" required>
+            <div class="feeds">
+                <h2>Feeds</h2>
+                <ul>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">New record, over 90 views.</span>
+                            <span class="activity-time">10 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">Database error.</span>
+                             <span class="activity-time">15 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">New record, over 40 users.</span>
+                             <span class="activity-time">17 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">New comments.</span>
+                             <span class="activity-time">25 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">Checj Transactions.</span>
+                             <span class="activity-time">28 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">CPU overload.</span>
+                             <span class="activity-time">35 mins</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="activity-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="activity-content">
+                            <span class="activity-text">New shares.</span>
+                             <span class="activity-time">39 mins</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
+                
+            
 
-            <!-- Number Input -->
-            <div class="form-group">
-                <label for="number" id="number-label">Phone Number</label>
-                <input type="number" id="number" name="number" placeholder="Enter your phone number" value="0790857019" required min="1000000000" max="9999999999">
+        </section>
+        <section class="stats">
+            <h2>Geberal Stats</h2>
+            <div class="bar">
+                <span class="bar-text">New Visitors</span>
+                <span class="bar-percentage">+25%</span>
             </div>
-
-            <!-- Dropdown Menu -->
-            <div class="form-group">
-                <label for="dropdown">How did you hear about us?</label>
-                <select id="dropdown" name="source" required>
-                    <option value="">Select an option</option>
-                    <option value="social-media">Social Media</option>
-                    <option value="friend">Friend</option>
-                    <option value="advertisement">Advertisement</option>
-                </select>
+            <div class="bar">
+                <span class="bar-text">New Users</span>
+                <span class="bar-percentage">50%</span>
             </div>
-
-            <!-- Radio Buttons -->
-            <div class="form-group">
-                <label>How satisfied are you with our service?</label>
-                <label><input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied</label>
-                <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
-                <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
-                <label><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</label>
+            <div class="bar">
+                <span class="bar-text">Bounce Rate</span>
+                <span class="bar-percentage">75%</span>
             </div>
-
-            <!-- Checkboxes -->
-            <div class="form-group">
-                <label>Select the features you like most:</label>
-                <label><input type="checkbox" name="features" value="user-friendly"> User-Friendly</label>
-                <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                <label><input type="checkbox" name="features" value="design"> Design</label>
+        </section>
+        <section class="countries">
+            <h2>Countries</h2>
+            <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>United States</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>UK</td>
+                    <td>15.7%</td>
+                </tr>
+                <tr>
+                    <td>Russia</td>
+                    <td>5.6%</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>2.1%</td>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td>1.9%</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>1.5%</td>
+                </tr>
+            </table>
+    
+            <button type="more-countries" id="more-countries">More Countries</button>
+        </section>
+        <section class="recent">
+            <div class="recent-users">
+                <h2>Recent Users</h2>
+                <ul>
+                    <li>
+                        <div class="user-avatar">
+                            <img src="./Images/Mike.png" alt="Mike">
+                        </div>
+                        <span>Mike</span>
+                    </li>
+                    <li>
+                        <div class="user-avatar">
+                            <img src="./Images/Jill.png" alt="Jill">
+                        </div>
+                        <span>Jill</span>
+                    </li>
+                    <li>
+                        <div class="user-avatar">
+                            <img src="./Images/Jane.png" alt="Jane">
+                        </div>
+                        <span>Jane</span>
+                    </li>
+                </ul>
             </div>
-
-            <!-- Textarea for Comments -->
-            <div class="form-group">
-                <label for="comments">Additional Comments</label>
-                <textarea id="comments" name="comments" placeholder="Enter your comments or suggestions here"></textarea>
+            <div class="recent-comments">
+                <h2>Recent Comments</h2>
+                <div class="comment">
+                    <div class="user-avatar">
+                        <img src="./Images/John.png" alt="John">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="comment-author">John</span>
+                            <span class="comment-date">Sep 29, 2014, 9:12 PM</span>
+                        </div>
+                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt   
+         ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="user-avatar">   
+        
+                        <img src="./Images/Bo.png" alt="Bo">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="comment-author">Bo</span>
+                            <span class="comment-date">Sep 28, 2014, 10:15 PM</span>
+                        </div>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
             </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="info-card">
+                <h3>Demograpic</h3>
+                <hr class="green-line">
+                <ul>
+                    <li>Language</li>
+                    <li>Country</li>
+                    <li>City</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>System</h3>
+                <hr class="red-line">
+                <ul>
+                    <li>Browser</li>
+                    <li>OS</li>
+                    <li>More</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Target</h3>
+                <hr class="yellow-line">
+                <ul>
+                    <li>Users</li>
+                    <li>Active</li>
+                    <li>Geo</li>
+                    <li>Interests</li>
+                </ul>
+            </div>
+        </section>
 
-            <!-- Submit Button -->
-            <button type="submit" id="submit">Submit</button>
-        </form>
+
+        
+     </main>
+<footer>
+    <div class="footer-container">
+        <p>FOOTER</p>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank">w3CSS</a></p>
     </div>
+</footer>
+     
+        
+
 </body>
 </html>
